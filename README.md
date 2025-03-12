@@ -69,7 +69,3 @@ The **Automatic Indoor Grow Enclosure (A.I.G.E.)** is a **PIC18F45K20-based smar
 
 ## **Why This Project Matters?**  
 This project **demonstrates expertise in embedded systems, automation, and electronics integration**—valuable skills for **electronics engineering and IoT applications**.  
-
-🔗 **[View Source Code](#)** *(Replace with actual link to code folder)*  
-
----
