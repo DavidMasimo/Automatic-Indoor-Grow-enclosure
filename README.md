@@ -1,95 +1,75 @@
-# Automatic Indoor Grow Enclosure (A.I.G.E.)
+# **Automatic Indoor Grow Enclosure (A.I.G.E.)** 🌱💡  
 
-## Concept of Operations:
+## **Overview**  
+The **Automatic Indoor Grow Enclosure (A.I.G.E.)** is a **PIC18F45K20-based smart system** designed to maintain **optimal growing conditions** for plants. The system **automates irrigation, temperature and humidity regulation, lighting control, and airflow management**, ensuring a stable environment. Real-time environmental data is displayed on an LCD for monitoring.  
 
-The Automatic Indoor Grow Enclosure (A.I.G.E.) is designed to maintain optimal conditions for plant growth. The system automates watering, temperature and humidity regulation, lighting control, and airflow management. 
-It also displays essential environmental metrics in real-time.
+## **Key Features**  
+✅ **LCD Display**: Shows soil moisture, humidity, vapor pressure deficit (VPD), and temperature.  
+✅ **Automated Environment Control**: Sensors manage **temperature, humidity, and soil moisture**, activating fans and pumps as needed.  
+✅ **Grow Light Control**: Automatically turns **on/off** based on a preset schedule to simulate day and night cycles.  
+✅ **User Configuration**: Allows users to set target **temperature, humidity, and moisture levels** during initial setup.  
+✅ **Error Handling**: Alerts users when environmental conditions **fall outside the optimal range**.  
 
-## Key Features:
+---
 
-LCD Display: Shows real-time values for soil moisture, humidity, vapor pressure deficit (VPD), and temperature.
+## **System Components & Operation**  
 
-Automated Environment Control: Sensors regulate temperature, humidity, and soil moisture, activating fans and pumps as needed.
+### **1️⃣ LCD Display**  
+- **Type:** 4x20 backlit LCD  
+- **Interface:** UART  
+- **Displays:**  
+  - 🌱 **Soil Moisture (%)**  
+  - 🌡️ **Temperature (°C)**  
+  - 💨 **Vapor Pressure Deficit (kPa)**  
+  - ⚠️ **Error Messages for abnormal temperature/humidity levels**  
+  - 🔧 **Initial setup prompts for user configuration**  
 
-Grow Light Control: Lights turn on/off based on a pre-set schedule to simulate day and night cycles.
+### **2️⃣ Automated Environment Control**  
+**Sensors:**  
+- 📏 **Temperature Sensor (PT100 RTD)**  
+- 🌫️ **Humidity Sensor (HIH-5030)**  
+- 🌿 **Soil Moisture Sensor**  
 
-User Configuration: Initial setup allows users to set desired temperature, humidity, and moisture levels.
+**Fan Control:**  
+- ✅ Automatically circulates air when **temperature/humidity exceed set thresholds**  
+- ✅ Controlled via **PIC18F45K20 microcontroller**  
 
-Error Handling: Alerts users when temperature and humidity levels are out of optimal range.
+**Watering System:**  
+- 🚰 **Water Pump Activation** when soil moisture drops below the threshold  
+- 💧 Water stored in **1-5L reservoir**  
 
-System Requirements
+### **3️⃣ Grow Enclosure**  
+- 📏 **Dimensions:** 30cm x 30cm x 50cm  
+- 🌞 **LED Grow Lights** (Full spectrum, independent circuit)  
+- 🔧 **Mounts for**: Fans, lights, sensors, and tubing  
+- 🌬️ **Ventilation for air circulation**  
 
-### 1) LCD Display
+### **4️⃣ Electronics Enclosure**  
+- 🔋 **Power Supply:** 12V DC  
+- 🔧 **Components stored inside for protection**  
+- 🛠️ **Controls:**  
+  - Power button **(On/Off)**  
+  - **Up/Down buttons** for selecting values  
+  - **OK button** for confirming selections  
 
-Backlit LCD with 4 rows of 20 characters.
+---
 
-Displays:
+## **Future Improvements** 🛠️  
+🔹 Implement **wireless monitoring** via Bluetooth/WiFi  
+🔹 Upgrade to **3D-printed enclosures** for better modularity  
+🔹 Add **data logging functionality** for long-term analysis  
 
-Soil moisture percentage
+---
 
-Temperature (°C)
+## **Demo & Photos** 📸  
+![Image](https://github.com/user-attachments/assets/1c878a49-f330-4732-acbd-9f602b5cbb76)
+![Image](https://github.com/user-attachments/assets/d4b68184-3207-4150-8d3d-c5a41308ba97)
+![Image](https://github.com/user-attachments/assets/26ee0e85-187b-4010-b048-e4ea24c17aea)
+---
 
-Vapor Pressure Deficit (kPa)
+## **Why This Project Matters?**  
+This project **demonstrates expertise in embedded systems, automation, and electronics integration**—valuable skills for **electronics engineering and IoT applications**.  
 
-Initial configuration prompts for temperature, humidity, and moisture
+🔗 **[View Source Code](#)** *(Replace with actual link to code folder)*  
 
-Error messages for incompatible temperature and humidity levels
-
-Interface: UART
-
-### 2) Temperature, Humidity, and Moisture Regulation
-
-Sensors:
-
-Temperature sensor (°C)
-
-Humidity sensor (%RH)
-
-Moisture sensor (below soil warning line)
-
-Fan Control:
-
-Automatically circulates air when temperature or humidity exceeds set values.
-
-Controlled by PIC microcontroller.
-
-Watering System:
-
-Activates water pump when soil moisture drops below set level.
-
-Water stored in a 1-5L container.
-
-### 3) Plant Enclosure:
-
-Dimensions: 30cm x 30cm x 50cm
-
-Equipped with LED grow lights (independent from other circuits).
-
-Includes mounts for fans, lights, sensors, and tubing.
-
-Ventilation for air circulation.
-
-### 4) Electronics Enclosure:
-
-Stores logic components.
-
-Closed, easy-to-disassemble design.
-
-Power: 12V DC power supply.
-
-Controls:
-
-Power button for turning on/off
-
-Up/Down buttons for selecting values in initial setup
-
-OK button for confirming selections
-
-## Hardware Design:
-
-### Components List
-imagine here[table]
-## Test Procedures:
-image here[table]
-
-Final Code[Code Repository]
+---
